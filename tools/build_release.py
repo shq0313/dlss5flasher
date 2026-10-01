@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SKIP = {'__pycache__', '.git', 'direct_url.json'}
-SOURCE_FILES = ('README.md', 'LICENSE', 'THIRD_PARTY_NOTICES.md', '.gitignore',
+SOURCE_FILES = ('README.md', 'CHANGELOG.md', 'LICENSE', 'THIRD_PARTY_NOTICES.md', '.gitignore',
                 'requirements.txt', 'requirements-lock.txt', 'launch.py', '启动.bat',
                 'docs/依赖源码说明.md', 'tools/build_release.py')
 SOURCE_TREES = ('app', 'native', 'tests', 'licenses')

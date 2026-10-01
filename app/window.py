@@ -27,6 +27,7 @@ from .engine import (
 
 from .workbench_ui import STYLE
 from .video_output import publish_video
+from .render_progress import FrameTimeEstimate, progress_text
 
 
 
@@ -230,7 +231,7 @@ class SliderRow(QWidget):
 
 class Events(QObject):
     result = Signal(int, str, object)
-    progress = Signal(int, int, int)
+    progress = Signal(int, int, int, object)
 
 
 class MainWindow(QMainWindow):
@@ -601,8 +602,11 @@ class MainWindow(QMainWindow):
         self.update_buttons()
 
         def render(token, gen):
-            runtime.export(info, params, path, token,
-                           lambda current, total: self.events.progress.emit(gen, current, total))
+            estimate = FrameTimeEstimate()
+            def report(current, total):
+                remaining = estimate.update(current, total, time.perf_counter())
+                self.events.progress.emit(gen, current, total, remaining)
+            runtime.export(info, params, path, token, report)
             token.check()
             return key, str(path)
         self.request("render_video", render)
@@ -630,10 +634,10 @@ class MainWindow(QMainWindow):
         self.update_buttons()
         self.request("export", lambda token, gen: publish_video(cached, path, token))
 
-    def on_progress(self, generation, current, total):
+    def on_progress(self, generation, current, total, remaining=None):
         if generation == self.generation:
             self.progress.setValue(current)
-            self.status.setText(f"正在渲染视频 · {current} / {total} 帧 · {current / total:.0%}" if current < total else "正在合并音频并验证输出…")
+            self.status.setText(progress_text(current, total, remaining))
 
     def cancel_job(self):
         self.token.cancel()

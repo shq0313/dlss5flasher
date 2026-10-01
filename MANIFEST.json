@@ -25,6 +25,11 @@
     "sha256": "a45d0ef3e0c243e054e85bdb755e2672df759f0d1cade4e8fb186d5204d5fb2c"
   },
   {
+    "path": "app/render_progress.py",
+    "bytes": 1375,
+    "sha256": "d4f0250f86e8401063eac5d0f8d3825dc950b4c3741904894593874443b35beb"
+  },
+  {
     "path": "app/vendor/nvofa.py",
     "bytes": 11548,
     "sha256": "bde4d765689ac0c4b90e4d1c7517bb0857318e1660415f525ebab176f70ab766"
@@ -36,13 +41,18 @@
   },
   {
     "path": "app/window.py",
-    "bytes": 30132,
-    "sha256": "992185818584b7b528ea0b36301cd4787c124a44b42831b0d2dc7cd18b97e5eb"
+    "bytes": 30266,
+    "sha256": "ec422f4b6416910d7ab2f81bf368b50c780f553414b956da79dab011ddd01f21"
   },
   {
     "path": "app/workbench_ui.py",
     "bytes": 12052,
     "sha256": "cab1ee33ee2941aed37296c12738cdeb002a9b4885051f0ad63b595f2ad9d57e"
+  },
+  {
+    "path": "CHANGELOG.md",
+    "bytes": 1120,
+    "sha256": "622ae3989b7ff1e4624284dd77a894f632d9fe6c0f1a1823e532cca56c603910"
   },
   {
     "path": "docs/依赖源码说明.md",
@@ -116,8 +126,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 6905,
-    "sha256": "19fbf8e275f7ff562d42e26ce1a294b05ad5ee7f8f6a6389d5807e5b1ee73fc7"
+    "bytes": 7483,
+    "sha256": "559df43ec69485377ede4deb5106300c0265ea72eb2b9eec2a38a94b2a58ff38"
   },
   {
     "path": "requirements-lock.txt",
@@ -140,6 +150,11 @@
     "sha256": "0e21962e4934bbc048887c267132d15ac6b6163f7cf3e53d3921d6d74ace883f"
   },
   {
+    "path": "tests/test_render_progress.py",
+    "bytes": 1726,
+    "sha256": "ab5fe34576e531cf03f52bfea750e374c57fe377c5827243b38f8536e3c8eedf"
+  },
+  {
     "path": "tests/test_video_output.py",
     "bytes": 1450,
     "sha256": "b71ad6464efd1f96766826a122db4644027da67471ed66f65766eb302d8fbaa3"
@@ -151,8 +166,8 @@
   },
   {
     "path": "tools/build_release.py",
-    "bytes": 4211,
-    "sha256": "21f71835ba1174d660f5c54f89a9ea4e71cfffb98288a9999de2829a504e1038"
+    "bytes": 4227,
+    "sha256": "8c351fcc76e2dbf4599b66885999fd71115d45446e82f53943aaa0b13d6ffa24"
   },
   {
     "path": "启动.bat",
