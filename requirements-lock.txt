@@ -1,0 +1,6 @@
+# Validated Windows x64 portable dependency versions.
+PySide6-Essentials==6.11.2
+shiboken6==6.11.2
+av==17.0.1
+numpy==2.3.2
+Pillow==12.2.0

@@ -1,0 +1,162 @@
+[
+  {
+    "path": ".gitignore",
+    "bytes": 179,
+    "sha256": "f3ff36a50e999d8142b292c35a738fe263521ac65061d16434d087ce37e4c563"
+  },
+  {
+    "path": "app/__init__.py",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "app/engine.py",
+    "bytes": 18049,
+    "sha256": "0822a73b7ee4db88f79b3545632d375e87c7734f5e24676407c5687518b5f59a"
+  },
+  {
+    "path": "app/native_worker.py",
+    "bytes": 5903,
+    "sha256": "af0fb73b5097f002dff2c8d7aabb4a1fe3da99e7be5e1314d451cda835becc33"
+  },
+  {
+    "path": "app/processing.py",
+    "bytes": 12912,
+    "sha256": "a45d0ef3e0c243e054e85bdb755e2672df759f0d1cade4e8fb186d5204d5fb2c"
+  },
+  {
+    "path": "app/vendor/nvofa.py",
+    "bytes": 11548,
+    "sha256": "bde4d765689ac0c4b90e4d1c7517bb0857318e1660415f525ebab176f70ab766"
+  },
+  {
+    "path": "app/video_output.py",
+    "bytes": 1310,
+    "sha256": "74b20aa8a61c2ee0759facd067192907d33ab24dab391b1900fd52c2729dd2fb"
+  },
+  {
+    "path": "app/window.py",
+    "bytes": 30132,
+    "sha256": "992185818584b7b528ea0b36301cd4787c124a44b42831b0d2dc7cd18b97e5eb"
+  },
+  {
+    "path": "app/workbench_ui.py",
+    "bytes": 12052,
+    "sha256": "cab1ee33ee2941aed37296c12738cdeb002a9b4885051f0ad63b595f2ad9d57e"
+  },
+  {
+    "path": "docs/依赖源码说明.md",
+    "bytes": 1601,
+    "sha256": "23139a5dc48ca390ba46cd6d3390895adbf6f4a492102b9d35409d9a2b81da7e"
+  },
+  {
+    "path": "launch.py",
+    "bytes": 613,
+    "sha256": "1f1d596e96d6ef1d2796fbc69d320b6213292b4efaec35b26db498b251d7e06f"
+  },
+  {
+    "path": "LICENSE",
+    "bytes": 1094,
+    "sha256": "fc7387990d55e4389b24f3d303abdcfb29e8e94e7860163ded47c6ecf1d76f84"
+  },
+  {
+    "path": "licenses/DLSS5Tool-MIT.txt",
+    "bytes": 1080,
+    "sha256": "73aff49ede88def22503667e4eabcc3b81915bc7f9fdbe5d4ff558c761d86119"
+  },
+  {
+    "path": "licenses/NVIDIA-OpticalFlow.txt",
+    "bytes": 1519,
+    "sha256": "7c422ca8f1e18bec2e4ef866fa55e7f3b1d28b625fc39a464ef0554cdbd7c7c1"
+  },
+  {
+    "path": "licenses/NVIDIA-RTX-SDK.txt",
+    "bytes": 26727,
+    "sha256": "3027f23ca5a46dd9cb8183fbd522983a86f64d7daac5982912bf9f214671f294"
+  },
+  {
+    "path": "native/host_v2/build.bat",
+    "bytes": 2038,
+    "sha256": "52c9c641a3a34a0c73b3cc91aa4b6249fc564f09c670f1851ba9ff05ba69fa80"
+  },
+  {
+    "path": "native/host_v2/dlssnr_host_v2.cpp",
+    "bytes": 72490,
+    "sha256": "c1f81e55e3295d8fd4339ad2fa0b07e062e8f1b8a2830aebd45413807ac0ad06"
+  },
+  {
+    "path": "native/host_v2/gpu_flow.h",
+    "bytes": 8831,
+    "sha256": "ddf1a171e86c1664fa5e0d578cac7df87e273474d1babde1f88b2ac2eb8c1f56"
+  },
+  {
+    "path": "native/host_v2/guidance_upload.h",
+    "bytes": 2369,
+    "sha256": "e57f9507b803bb9a622324fa53869aa8d4e65f4d6d933442ff439771c43131e6"
+  },
+  {
+    "path": "native/host_v2/host_queue.h",
+    "bytes": 756,
+    "sha256": "423646fbec2c15043083731d2e8efb6230353a12a9371488a844a03c6c542777"
+  },
+  {
+    "path": "native/host_v2/tile_blend.h",
+    "bytes": 3475,
+    "sha256": "947b3b4bab2404c8789df408d53e2db18f0a41ed6cab7529f504e689f025644c"
+  },
+  {
+    "path": "native/vsr_host/build.bat",
+    "bytes": 2177,
+    "sha256": "37d0d76db84e05180afb856f4b1a9c5a6648bbdcf5e9f4061f10eec9334d69a2"
+  },
+  {
+    "path": "native/vsr_host/vsr_host.cpp",
+    "bytes": 19140,
+    "sha256": "1a4880c5135a6c67d14a6059c6b16bb1f6e77808aade464f3c8089d7187e1e82"
+  },
+  {
+    "path": "README.md",
+    "bytes": 6905,
+    "sha256": "19fbf8e275f7ff562d42e26ce1a294b05ad5ee7f8f6a6389d5807e5b1ee73fc7"
+  },
+  {
+    "path": "requirements-lock.txt",
+    "bytes": 138,
+    "sha256": "62cc0ad59cfbbbefe85c6e67dda46047cbc6d0fb2a9bf0e42fe20a970d2ed4c8"
+  },
+  {
+    "path": "requirements.txt",
+    "bytes": 57,
+    "sha256": "a8d88d74040036c51baa39eb66539c66b5d081582db3c1ddc8e6a56986a6c4f9"
+  },
+  {
+    "path": "tests/test_app.py",
+    "bytes": 4457,
+    "sha256": "23e3bdbe62ba779b6edf502492dba5c1daee17e52715e5b1e6a67050521cbebd"
+  },
+  {
+    "path": "tests/test_processing.py",
+    "bytes": 5197,
+    "sha256": "0e21962e4934bbc048887c267132d15ac6b6163f7cf3e53d3921d6d74ace883f"
+  },
+  {
+    "path": "tests/test_video_output.py",
+    "bytes": 1450,
+    "sha256": "b71ad6464efd1f96766826a122db4644027da67471ed66f65766eb302d8fbaa3"
+  },
+  {
+    "path": "THIRD_PARTY_NOTICES.md",
+    "bytes": 2076,
+    "sha256": "4faaaba474d9c3a915633984fca571d2ef8a3b836182b8ccebabf439880a6937"
+  },
+  {
+    "path": "tools/build_release.py",
+    "bytes": 4211,
+    "sha256": "21f71835ba1174d660f5c54f89a9ea4e71cfffb98288a9999de2829a504e1038"
+  },
+  {
+    "path": "启动.bat",
+    "bytes": 442,
+    "sha256": "11413e27b1f2dcb7192689e19c091199f742f7fbf76ea7683b6b86862f0dae16"
+  }
+]

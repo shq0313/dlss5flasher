@@ -1,0 +1,14 @@
+.deps/
+.work/
+backups/
+__pycache__/
+*.pyc
+output/
+settings.local.json
+python_embeded/
+ffmpeg-8.0.1-full_build/
+runtime/
+startup-error.log
+build/
+release/
+third_party/NVIDIA-DLSS/
