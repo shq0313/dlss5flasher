@@ -12,3 +12,4 @@ startup-error.log
 build/
 release/
 third_party/NVIDIA-DLSS/
+third_party/release-sources/

@@ -1,8 +1,8 @@
 [
   {
     "path": ".gitignore",
-    "bytes": 179,
-    "sha256": "f3ff36a50e999d8142b292c35a738fe263521ac65061d16434d087ce37e4c563"
+    "bytes": 208,
+    "sha256": "3a845b8db6af004102adc2e7ecb1537206687de1ab44724d6cdb35704945f0e0"
   },
   {
     "path": "app/__init__.py",
@@ -21,8 +21,8 @@
   },
   {
     "path": "app/processing.py",
-    "bytes": 12912,
-    "sha256": "a45d0ef3e0c243e054e85bdb755e2672df759f0d1cade4e8fb186d5204d5fb2c"
+    "bytes": 12914,
+    "sha256": "3c2019db3d29b9a6e679a580390bdf1a42530cd4b8a82bccb8b863d7b1a4851d"
   },
   {
     "path": "app/render_progress.py",
@@ -41,13 +41,13 @@
   },
   {
     "path": "app/window.py",
-    "bytes": 30266,
-    "sha256": "ec422f4b6416910d7ab2f81bf368b50c780f553414b956da79dab011ddd01f21"
+    "bytes": 31144,
+    "sha256": "3d0e90921227e72a9695a86f7f77677fc5689e90890a46bd996043a98d934e11"
   },
   {
     "path": "app/workbench_ui.py",
-    "bytes": 12052,
-    "sha256": "cab1ee33ee2941aed37296c12738cdeb002a9b4885051f0ad63b595f2ad9d57e"
+    "bytes": 12098,
+    "sha256": "26c1cba8ea4abd6fca7f2824de6cc8421fb1f30a21697e3b1388c23a524afb4b"
   },
   {
     "path": "CHANGELOG.md",
@@ -56,8 +56,8 @@
   },
   {
     "path": "docs/依赖源码说明.md",
-    "bytes": 1601,
-    "sha256": "23139a5dc48ca390ba46cd6d3390895adbf6f4a492102b9d35409d9a2b81da7e"
+    "bytes": 2720,
+    "sha256": "b9dd6381d474f05a90a2ca201cd04e6c3f9c6ca431a8d1c9456b1d759bd1dd1f"
   },
   {
     "path": "launch.py",
@@ -70,9 +70,29 @@
     "sha256": "fc7387990d55e4389b24f3d303abdcfb29e8e94e7860163ded47c6ecf1d76f84"
   },
   {
+    "path": "licenses/CPython/LICENSE.txt",
+    "bytes": 33861,
+    "sha256": "62bec384df47b0328307db41455ff6ea2559e5546b394ac69148561b21703120"
+  },
+  {
     "path": "licenses/DLSS5Tool-MIT.txt",
     "bytes": 1080,
     "sha256": "73aff49ede88def22503667e4eabcc3b81915bc7f9fdbe5d4ff558c761d86119"
+  },
+  {
+    "path": "licenses/FFmpeg-CLI/LICENSE.txt",
+    "bytes": 35147,
+    "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+  },
+  {
+    "path": "licenses/FFmpeg-CLI/UPSTREAM_BUILD.txt",
+    "bytes": 44660,
+    "sha256": "e437f4b0b7091060ea89c59102da9e96a59e4bdf9a5bdbc662ca6a10e2ebeeb4"
+  },
+  {
+    "path": "licenses/NumPy/LICENSE.txt",
+    "bytes": 47722,
+    "sha256": "233d7ab5c32bc4aed6848f647d397007965acdb691c86fe27d17cc3eb60359d1"
   },
   {
     "path": "licenses/NVIDIA-OpticalFlow.txt",
@@ -83,6 +103,106 @@
     "path": "licenses/NVIDIA-RTX-SDK.txt",
     "bytes": 26727,
     "sha256": "3027f23ca5a46dd9cb8183fbd522983a86f64d7daac5982912bf9f214671f294"
+  },
+  {
+    "path": "licenses/NVIDIA-RTX-Video-SDK.pdf",
+    "bytes": 136535,
+    "sha256": "5addfcf7c78891a12f1dcd6b5f86c2512351ab71b3872f446ba10e1b6da54464"
+  },
+  {
+    "path": "licenses/Pillow/LICENSE.txt",
+    "bytes": 78014,
+    "sha256": "75bb81b58f9b39786eeb2e56a1eb829aae501042d49e1dc766ca187b6ce9656f"
+  },
+  {
+    "path": "licenses/PyAV/COPYING.GPLv2",
+    "bytes": 18092,
+    "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+  },
+  {
+    "path": "licenses/PyAV/COPYING.GPLv3",
+    "bytes": 35147,
+    "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+  },
+  {
+    "path": "licenses/PyAV/COPYING.LGPLv2.1",
+    "bytes": 26517,
+    "sha256": "246041b6ecf9bc32d718a62c57877c78b5eb397b6467e74ed7ae2626ab189c30"
+  },
+  {
+    "path": "licenses/PyAV/COPYING.LGPLv3",
+    "bytes": 7651,
+    "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+  },
+  {
+    "path": "licenses/PyAV/LICENSE.txt",
+    "bytes": 1528,
+    "sha256": "f32ebcb6007dcc05eea369b3820e6391b0a7ef1ed763f30f1aca15dfdbacbe96"
+  },
+  {
+    "path": "licenses/PyAV/upstream-ffmpeg-license-detection.patch",
+    "bytes": 429,
+    "sha256": "9bfb4d74143f49e6beac8b49f4f0125cdd79498b4d8a34dbf77aff8e10cbd732"
+  },
+  {
+    "path": "licenses/PyAV/x264-COPYING.txt",
+    "bytes": 17992,
+    "sha256": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670"
+  },
+  {
+    "path": "licenses/PyAV/x265-COPYING.txt",
+    "bytes": 18120,
+    "sha256": "d8afb1bcc7a2cfc603683b168d6987ef0a48e59e0da3693bf55c5d33b67e2b49"
+  },
+  {
+    "path": "licenses/Qt/Apache-2.0.txt",
+    "bytes": 10398,
+    "sha256": "e3ba223bb1423f0aad8c3dfce0fe3148db48926d41e6fbc3afbbf5ff9e1c89cb"
+  },
+  {
+    "path": "licenses/Qt/BSD-3-Clause.txt",
+    "bytes": 1478,
+    "sha256": "62803a6fcceef9091a129d7293d2469ea332b35d30f5e1bc4c628a9f35f3d29c"
+  },
+  {
+    "path": "licenses/Qt/GFDL-1.3-no-invariants-only.txt",
+    "bytes": 22955,
+    "sha256": "110535522396708cea37c72a802c5e7e81391139f5f7985631c93ef242b206a4"
+  },
+  {
+    "path": "licenses/Qt/GPL-2.0-only.txt",
+    "bytes": 18092,
+    "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+  },
+  {
+    "path": "licenses/Qt/GPL-3.0-only.txt",
+    "bytes": 35147,
+    "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+  },
+  {
+    "path": "licenses/Qt/LGPL-3.0-only.txt",
+    "bytes": 7651,
+    "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+  },
+  {
+    "path": "licenses/Qt/LicenseRef-Qt-Commercial.txt",
+    "bytes": 462,
+    "sha256": "9b1f50aae6267f9d5e0ceb6775ee86450262c25ec7c0573e151fe5d3f18a4700"
+  },
+  {
+    "path": "licenses/Qt/Qt-GPL-exception-1.0.txt",
+    "bytes": 965,
+    "sha256": "40678d338ce53cd93f8b22b281a2ecbcaa3ee65ce60b25ffb0c462b0530846b2"
+  },
+  {
+    "path": "licenses/README.md",
+    "bytes": 1007,
+    "sha256": "757881c16b5232ae18a5e19fadb28ece1b707e4cd7e18caac163fdf0010d44ee"
+  },
+  {
+    "path": "licenses/source-materials.json",
+    "bytes": 20023,
+    "sha256": "a240a7a600f456fd0022c0b2ee3657b81e7345d1df999e46475b39a546be8d70"
   },
   {
     "path": "native/host_v2/build.bat",
@@ -126,8 +246,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 7483,
-    "sha256": "559df43ec69485377ede4deb5106300c0265ea72eb2b9eec2a38a94b2a58ff38"
+    "bytes": 7679,
+    "sha256": "b51f75aff43c9f0b3054ba07933de1e5180ce7f0cb4a84afe6038f8756e5c8a5"
   },
   {
     "path": "requirements-lock.txt",
@@ -161,13 +281,13 @@
   },
   {
     "path": "THIRD_PARTY_NOTICES.md",
-    "bytes": 2076,
-    "sha256": "4faaaba474d9c3a915633984fca571d2ef8a3b836182b8ccebabf439880a6937"
+    "bytes": 3025,
+    "sha256": "ffbbcacceb4e2f4311336debd44e957fee39dbcef0d3a9c7c5c3e82e774e7248"
   },
   {
     "path": "tools/build_release.py",
-    "bytes": 4227,
-    "sha256": "8c351fcc76e2dbf4599b66885999fd71115d45446e82f53943aaa0b13d6ffa24"
+    "bytes": 5956,
+    "sha256": "689fac7d7fcef3e36cd513b10f7ec742202e8993f53319cc9c01d0a75b3be3a2"
   },
   {
     "path": "启动.bat",

@@ -1,0 +1,348 @@
+{
+  "date": "2026-10-02",
+  "complete_corresponding_source": false,
+  "files": [
+    {
+      "file": "qt-everywhere-src-6.11.2.tar.xz",
+      "url": "https://download.qt.io/archive/qt/6.11/6.11.2/single/qt-everywhere-src-6.11.2.tar.xz",
+      "resolved_url": "https://qt.mirror.constant.com/archive/qt/6.11/6.11.2/single/qt-everywhere-src-6.11.2.tar.xz",
+      "bytes": 1019661552,
+      "sha256": "6dcfbca271d76a6502741a2c0dc6fc98ef7dd0b7b4cfd0abcebb285a86a26f33",
+      "status": "downloaded",
+      "expected_sha256": "6dcfbca271d76a6502741a2c0dc6fc98ef7dd0b7b4cfd0abcebb285a86a26f33",
+      "verified": true
+    },
+    {
+      "file": "pyside-setup-everywhere-src-6.11.2.tar.xz",
+      "url": "https://download.qt.io/official_releases/QtForPython/pyside6/PySide6-6.11.2-src/pyside-setup-everywhere-src-6.11.2.tar.xz",
+      "resolved_url": "https://qt.mirror.constant.com/official_releases/QtForPython/pyside6/PySide6-6.11.2-src/pyside-setup-everywhere-src-6.11.2.tar.xz",
+      "bytes": 18053248,
+      "sha256": "cba47efbaad1bedd529725cbc14e21f156c7a19366f07b3edfbb076ffd7afdf8",
+      "status": "downloaded",
+      "expected_sha256": "cba47efbaad1bedd529725cbc14e21f156c7a19366f07b3edfbb076ffd7afdf8",
+      "verified": true
+    },
+    {
+      "file": "ffmpeg-894da5ca7d.tar.gz",
+      "url": "https://codeload.github.com/FFmpeg/FFmpeg/tar.gz/894da5ca7d",
+      "resolved_url": "https://codeload.github.com/FFmpeg/FFmpeg/tar.gz/894da5ca7d",
+      "bytes": 16409955,
+      "sha256": "06cd2ab358134bd99e6f43b1792143e153a5b409ff1c0c88a1cf5ff9b1ea52f8",
+      "status": "downloaded"
+    },
+    {
+      "file": "pyav-ffmpeg-8.0.1-5.tar.gz",
+      "url": "https://codeload.github.com/PyAV-Org/pyav-ffmpeg/tar.gz/refs/tags/8.0.1-5",
+      "resolved_url": "https://codeload.github.com/PyAV-Org/pyav-ffmpeg/tar.gz/refs/tags/8.0.1-5",
+      "bytes": 18416,
+      "sha256": "f4246c6b6c55f0345db3e1e9761b1391df2a5473160e494565ef0f1ca7d43f04",
+      "status": "downloaded"
+    },
+    {
+      "file": "PyAV-v17.0.1.tar.gz",
+      "url": "https://codeload.github.com/PyAV-Org/PyAV/tar.gz/refs/tags/v17.0.1",
+      "resolved_url": "https://codeload.github.com/PyAV-Org/PyAV/tar.gz/refs/tags/v17.0.1",
+      "bytes": 220046,
+      "sha256": "c23e4b10a23de15a78b76d1dcfc948c93850bf842c8db4e72064943327c78b92",
+      "status": "downloaded"
+    },
+    {
+      "file": "Python-3.13.12.tar.xz",
+      "url": "https://www.python.org/ftp/python/3.13.12/Python-3.13.12.tar.xz",
+      "resolved_url": "https://www.python.org/ftp/python/3.13.12/Python-3.13.12.tar.xz",
+      "bytes": 22926488,
+      "sha256": "2a84cd31dd8d8ea8aaff75de66fc1b4b0127dd5799aa50a64ae9a313885b4593",
+      "status": "downloaded"
+    },
+    {
+      "file": "qt-source-metadata.html",
+      "url": "https://download.qt.io/archive/qt/6.11/6.11.2/single/qt-everywhere-src-6.11.2.tar.xz.mirrorlist",
+      "resolved_url": "https://download.qt.io/archive/qt/6.11/6.11.2/single/qt-everywhere-src-6.11.2.tar.xz.mirrorlist",
+      "bytes": 7261,
+      "sha256": "e4031fb99c6ecaea8902ff71ff0112f35b60ec6163f745a59c52208b5219a39e",
+      "status": "downloaded"
+    },
+    {
+      "file": "pyside-source-metadata.html",
+      "url": "https://download.qt.io/official_releases/QtForPython/pyside6/PySide6-6.11.2-src/pyside-setup-everywhere-src-6.11.2.tar.xz.mirrorlist",
+      "resolved_url": "https://download.qt.io/official_releases/QtForPython/pyside6/PySide6-6.11.2-src/pyside-setup-everywhere-src-6.11.2.tar.xz.mirrorlist",
+      "bytes": 9175,
+      "sha256": "d40d2604e872a6158813927fa87dc17fc6a3638bd3b3f454c9336e9824f72e26",
+      "status": "downloaded"
+    },
+    {
+      "file": "pyav-input-alsa-lib-alsa-lib-1.2.14.tar.bz2",
+      "url": "https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.14.tar.bz2",
+      "resolved_url": "https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.14.tar.bz2",
+      "bytes": 1115517,
+      "sha256": "be9c88a0b3604367dd74167a2b754a35e142f670292ae47a2fdef27a2ee97a32",
+      "status": "downloaded",
+      "expected_sha256": "be9c88a0b3604367dd74167a2b754a35e142f670292ae47a2fdef27a2ee97a32",
+      "verified": true
+    },
+    {
+      "file": "pyav-input-nv-codec-headers-n13.0.19.0.tar.gz",
+      "url": "https://github.com/FFmpeg/nv-codec-headers/archive/refs/tags/n13.0.19.0.tar.gz",
+      "resolved_url": "https://codeload.github.com/FFmpeg/nv-codec-headers/tar.gz/refs/tags/n13.0.19.0",
+      "bytes": 83385,
+      "sha256": "86d15d1a7c0ac73a0eafdfc57bebfeba7da8264595bf531cf4d8db1c22940116",
+      "status": "downloaded",
+      "expected_sha256": "86d15d1a7c0ac73a0eafdfc57bebfeba7da8264595bf531cf4d8db1c22940116",
+      "verified": true
+    },
+    {
+      "file": "pyav-input-amf-headers-AMF-headers-v1.5.0.tar.gz",
+      "url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/releases/download/v1.5.0/AMF-headers-v1.5.0.tar.gz",
+      "resolved_url": "https://release-assets.githubusercontent.com/github-production-release-asset/65736058/74244d3f-60c1-4129-a81b-f4e616b13b03?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-01T18%3A26%3A41Z&rscd=attachment%3B+filename%3DAMF-headers-v1.5.0.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-01T17%3A26%3A30Z&ske=2026-10-01T18%3A26%3A41Z&sks=b&skv=2018-11-09&sig=hp1TZHx%2BETRg2JxFMSayRJ%2FQoDDhI%2BYeEIDLxnnhJS4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MDg3NjQ1NCwibmJmIjoxNzkwODc2MTU0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.AaGzXVzRLXTbXmpL8L2P08UxZaENbrfzRonX_3DQ_D4&response-content-disposition=attachment%3B%20filename%3DAMF-headers-v1.5.0.tar.gz&response-content-type=application%2Foctet-stream",
+      "bytes": 82755,
+      "sha256": "d569647fa26f289affe81a206259fa92f819d06db1e80cc334559953e82a3f01",
+      "status": "downloaded",
+      "expected_sha256": "d569647fa26f289affe81a206259fa92f819d06db1e80cc334559953e82a3f01",
+      "verified": true
+    },
+    {
+      "file": "pyav-input-libvpl-v2.16.0.tar.gz",
+      "url": "https://github.com/intel/libvpl/archive/refs/tags/v2.16.0.tar.gz",
+      "resolved_url": "https://codeload.github.com/intel/libvpl/tar.gz/refs/tags/v2.16.0",
+      "bytes": 12968334,
+      "sha256": "d60931937426130ddad9f1975c010543f0da99e67edb1c6070656b7947f633b6",
+      "status": "downloaded",
+      "expected_sha256": "d60931937426130ddad9f1975c010543f0da99e67edb1c6070656b7947f633b6",
+      "verified": true
+    },
+    {
+      "file": "pyav-input-ffmpeg-ffmpeg-8.0.1.tar.xz",
+      "url": "https://ffmpeg.org/releases/ffmpeg-8.0.1.tar.xz",
+      "resolved_url": "https://ffmpeg.org/releases/ffmpeg-8.0.1.tar.xz",
+      "bytes": 11388848,
+      "sha256": "05ee0b03119b45c0bdb4df654b96802e909e0a752f72e4fe3794f487229e5a41",
+      "status": "downloaded",
+      "expected_sha256": "05ee0b03119b45c0bdb4df654b96802e909e0a752f72e4fe3794f487229e5a41",
+      "verified": true
+    },
+    {
+      "file": "pyav-input-gmp-gmp-6.3.0.tar.xz",
+      "url": "https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz",
+      "resolved_url": "https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz",
+      "bytes": 2094196,
+      "sha256": "a3c2b80201b89e68616f4ad30bc66aee4927c3ce50e33929ca819d5c43538898",
+      "status": "downloaded",
+      "expected_sha256": "a3c2b80201b89e68616f4ad30bc66aee4927c3ce50e33929ca819d5c43538898",
+      "verified": true
+    },
+    {
+      "file": "pyav-input-unistring-libunistring-1.4.1.tar.gz",
+      "url": "https://ftp.gnu.org/gnu/libunistring/libunistring-1.4.1.tar.gz",
+      "resolved_url": "https://ftp.gnu.org/gnu/libunistring/libunistring-1.4.1.tar.gz",
+      "bytes": 5039105,
+      "sha256": "12542ad7619470efd95a623174dcd4b364f2483caf708c6bee837cb53a54cb9d",
+      "status": "downloaded",
+      "expected_sha256": "12542ad7619470efd95a623174dcd4b364f2483caf708c6bee837cb53a54cb9d",
+      "verified": true
+    },
+    {
+      "file": "pyav-input-nettle-nettle-3.10.2.tar.gz",
+      "url": "https://ftp.gnu.org/gnu/nettle/nettle-3.10.2.tar.gz",
+      "resolved_url": "https://ftp.gnu.org/gnu/nettle/nettle-3.10.2.tar.gz",
+      "bytes": 2644644,
+      "sha256": "fe9ff51cb1f2abb5e65a6b8c10a92da0ab5ab6eaf26e7fc2b675c45f1fb519b5",
+      "status": "downloaded",
+      "expected_sha256": "fe9ff51cb1f2abb5e65a6b8c10a92da0ab5ab6eaf26e7fc2b675c45f1fb519b5",
+      "verified": true
+    },
+    {
+      "file": "pyav-input-gnutls-gnutls-3.8.11.tar.xz",
+      "url": "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.11.tar.xz",
+      "resolved_url": "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.11.tar.xz",
+      "bytes": 6939944,
+      "sha256": "91bd23c4a86ebc6152e81303d20cf6ceaeb97bc8f84266d0faec6e29f17baa20",
+      "status": "downloaded",
+      "expected_sha256": "91bd23c4a86ebc6152e81303d20cf6ceaeb97bc8f84266d0faec6e29f17baa20",
+      "verified": true
+    },
+    {
+      "file": "pyav-input-lame-lame_3.100.orig.tar.gz",
+      "url": "https://deb.debian.org/debian/pool/main/l/lame/lame_3.100.orig.tar.gz",
+      "resolved_url": "https://deb.debian.org/debian/pool/main/l/lame/lame_3.100.orig.tar.gz",
+      "bytes": 1524133,
+      "sha256": "ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e",
+      "status": "downloaded",
+      "expected_sha256": "ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e",
+      "verified": true
+    },
+    {
+      "file": "pyav-input-ogg-libogg-1.3.6.tar.gz",
+      "url": "https://downloads.xiph.org/releases/ogg/libogg-1.3.6.tar.gz",
+      "status": "downloaded",
+      "expected_sha256": "83e6704730683d004d20e21b8f7f55dcb3383cdf84c0daedf30bde175f774638",
+      "verified": true,
+      "verification_method": "upstream SHA256",
+      "sha256": "83e6704730683d004d20e21b8f7f55dcb3383cdf84c0daedf30bde175f774638",
+      "bytes": 604469
+    },
+    {
+      "file": "pyav-input-opus-opus-1.6.1.tar.gz",
+      "url": "https://ftp.osuosl.org/pub/xiph/releases/opus/opus-1.6.1.tar.gz",
+      "status": "downloaded",
+      "expected_sha256": "6ffcb593207be92584df15b32466ed64bbec99109f007c82205f0194572411a1",
+      "verified": true,
+      "verification_method": "upstream SHA256",
+      "sha256": "6ffcb593207be92584df15b32466ed64bbec99109f007c82205f0194572411a1",
+      "bytes": 10472813
+    },
+    {
+      "file": "pyav-input-speex-speex-1.2.1.tar.gz",
+      "url": "https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz",
+      "status": "downloaded",
+      "expected_sha256": "4b44d4f2b38a370a2d98a78329fefc56a0cf93d1c1be70029217baae6628feea",
+      "verified": true,
+      "verification_method": "upstream SHA256",
+      "sha256": "4b44d4f2b38a370a2d98a78329fefc56a0cf93d1c1be70029217baae6628feea",
+      "bytes": 1043278
+    },
+    {
+      "file": "pyav-input-vorbis-libvorbis-1.3.7.tar.xz",
+      "url": "https://ftp.osuosl.org/pub/xiph/releases/vorbis/libvorbis-1.3.7.tar.xz",
+      "status": "downloaded",
+      "expected_sha256": "b33cc4934322bcbf6efcbacf49e3ca01aadbea4114ec9589d1b1e9d20f72954b",
+      "verified": true,
+      "verification_method": "upstream SHA256",
+      "sha256": "b33cc4934322bcbf6efcbacf49e3ca01aadbea4114ec9589d1b1e9d20f72954b",
+      "bytes": 1203792
+    },
+    {
+      "file": "pyav-input-dav1d-dav1d-1.5.3.tar.bz2",
+      "url": "https://code.videolan.org/videolan/dav1d/-/archive/1.5.3/dav1d-1.5.3.tar.bz2",
+      "resolved_url": "https://code.videolan.org/videolan/dav1d/-/archive/1.5.3/dav1d-1.5.3.tar.bz2",
+      "bytes": 1217030,
+      "sha256": "e099f53253f6c247580c554d53a13f1040638f2066edc3c740e4c2f15174ce22",
+      "status": "downloaded",
+      "expected_sha256": "e099f53253f6c247580c554d53a13f1040638f2066edc3c740e4c2f15174ce22",
+      "verified": true
+    },
+    {
+      "file": "pyav-input-libsvtav1-SVT-AV1-v3.1.2.tar.bz2",
+      "url": "https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v3.1.2/SVT-AV1-v3.1.2.tar.bz2",
+      "resolved_url": "https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v3.1.2/SVT-AV1-v3.1.2.tar.bz2",
+      "bytes": 10203273,
+      "sha256": "802e9bb2b14f66e8c638f54857ccb84d3536144b0ae18b9f568bbf2314d2de88",
+      "status": "downloaded",
+      "expected_sha256": "802e9bb2b14f66e8c638f54857ccb84d3536144b0ae18b9f568bbf2314d2de88",
+      "verified": true
+    },
+    {
+      "file": "pyav-input-vpx-v1.15.2.tar.gz",
+      "url": "https://github.com/webmproject/libvpx/archive/refs/tags/v1.15.2.tar.gz",
+      "resolved_url": "https://codeload.github.com/webmproject/libvpx/tar.gz/refs/tags/v1.15.2",
+      "bytes": 5630368,
+      "sha256": "26fcd3db88045dee380e581862a6ef106f49b74b6396ee95c2993a260b4636aa",
+      "status": "downloaded",
+      "expected_sha256": "26fcd3db88045dee380e581862a6ef106f49b74b6396ee95c2993a260b4636aa",
+      "verified": true
+    },
+    {
+      "file": "pyav-input-png-libpng-1.6.54.tar.xz",
+      "url": "https://downloads.sourceforge.net/project/libpng/libpng16/1.6.54/libpng-1.6.54.tar.xz",
+      "resolved_url": "https://psychz.dl.sourceforge.net/project/libpng/libpng16/1.6.54/libpng-1.6.54.tar.xz?viasf=1&fid=dca4e3be36078835&e=1790962577&st=gJTBVYfHZxoFLOnooNwhuA",
+      "bytes": 1064472,
+      "sha256": "01c9d8a303c941ec2c511c14312a3b1d36cedb41e2f5168ccdaa85d53b887805",
+      "status": "downloaded",
+      "expected_sha256": "01c9d8a303c941ec2c511c14312a3b1d36cedb41e2f5168ccdaa85d53b887805",
+      "verified": true
+    },
+    {
+      "file": "pyav-input-webp-v1.5.0.tar.gz",
+      "url": "https://github.com/webmproject/libwebp/archive/refs/tags/v1.5.0.tar.gz",
+      "resolved_url": "https://codeload.github.com/webmproject/libwebp/tar.gz/refs/tags/v1.5.0",
+      "bytes": 3821241,
+      "sha256": "668c9aba45565e24c27e17f7aaf7060a399f7f31dba6c97a044e1feacb930f37",
+      "status": "downloaded",
+      "expected_sha256": "668c9aba45565e24c27e17f7aaf7060a399f7f31dba6c97a044e1feacb930f37",
+      "verified": true
+    },
+    {
+      "file": "pyav-input-openh264-v2.6.0.tar.gz",
+      "url": "https://github.com/cisco/openh264/archive/refs/tags/v2.6.0.tar.gz",
+      "resolved_url": "https://codeload.github.com/cisco/openh264/tar.gz/refs/tags/v2.6.0",
+      "bytes": 60302243,
+      "sha256": "558544ad358283a7ab2930d69a9ceddf913f4a51ee9bf1bfb9e377322af81a69",
+      "status": "downloaded",
+      "expected_sha256": "558544ad358283a7ab2930d69a9ceddf913f4a51ee9bf1bfb9e377322af81a69",
+      "verified": true
+    },
+    {
+      "file": "pyav-input-opencore-amr-opencore-amr-0.1.6.tar.gz",
+      "url": "https://downloads.sourceforge.net/project/opencore-amr/opencore-amr/opencore-amr-0.1.6.tar.gz",
+      "resolved_url": "https://pilotfiber.dl.sourceforge.net/project/opencore-amr/opencore-amr/opencore-amr-0.1.6.tar.gz?viasf=1&fid=ccecc839500a96d8&e=1790962585&st=GUwbKzXvavSqkEio-4u2uA",
+      "bytes": 939179,
+      "sha256": "483eb4061088e2b34b358e47540b5d495a96cd468e361050fae615b1809dc4a1",
+      "status": "downloaded",
+      "expected_sha256": "483eb4061088e2b34b358e47540b5d495a96cd468e361050fae615b1809dc4a1",
+      "verified": true
+    },
+    {
+      "file": "x264-b35605-source-mirror.tar.gz",
+      "url": "https://codeload.github.com/mirror/x264/tar.gz/b35605ace3ddf7c1a5d67a2eb553f034aef41d55",
+      "resolved_url": "https://code.videolan.org/videolan/x264/-/archive/b35605ace3ddf7c1a5d67a2eb553f034aef41d55/x264-b35605ace3ddf7c1a5d67a2eb553f034aef41d55.tar.bz2",
+      "bytes": 1040327,
+      "sha256": "cd71a7515b0e9a012e1ac9b1f8415bebcaf6fc97d4db32286642ac4c0fbe24f9",
+      "status": "downloaded",
+      "expected_sha256": "6eeb82934e69fd51e043bd8c5b0d152839638d1ce7aa4eea65a3fedcf83ff224",
+      "verified": true,
+      "upstream_archive_file": "pyav-input-x264-x264-b35605ace3ddf7c1a5d67a2eb553f034aef41d55.tar.bz2",
+      "verification_method": "alternate archive at same pinned Git commit; not the original tarball checksum",
+      "original_archive_verified": false
+    },
+    {
+      "file": "pyav-input-x265-x265_4.1.tar.gz",
+      "url": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz",
+      "resolved_url": "https://bbuseruploads.s3.amazonaws.com/c105f477-2003-4e12-80e5-06858cf7e40b/downloads/bc98a030-0738-41fe-9002-4d1779fb8cec/x265_4.1.tar.gz?response-content-disposition=attachment%3B%20filename%3D%22x265_4.1.tar.gz%22&response-content-encoding=None&AWSAccessKeyId=ASIA6KOSE3BNI6RQTK7H&Signature=Xt%2F00biqDGfxq9m%2BXHJ%2BC30Rfw0%3D&x-amz-security-token=IQoJb3JpZ2luX2VjELr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQDMzP%2BrWXtONfCzTERJYcjcMSNVuWPXM%2BTgPv4yASs0nwIgFaSiKKpnDP8Sc3ZjPX%2B37eUCnWCe0sGz7HhUOw%2Fw3pMqsAIIgv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw5ODQ1MjUxMDExNDYiDHW7TZDRmQW5F%2FKQqiqEApfgaRFYOb63t4EqNpZjTuJfUwAyHEGPUQbw0Bc8fDC1tSVPlLSGfquCd9yZcrISGAllBx67H%2FkFsgOZZ1e%2F9NZ8tXN9aqN5d26kFXT9TzTlwsoVlaOcpufeXkRenHJPYCSD8VtINMfKDN%2F9c6ka%2BY%2BtsrT16jRHe85KuXbEZSjSGJP1T8PxKmxhttX6XdWq8gc1hmr7jagQ%2FtHV2gSd7ntem4aBNAgJwpqoMIpNt0ZJGikK90BI7giCsnQl527GzdvFQi9pZu9H1hwXBasiW%2FaFNIlNquf27MFu%2FB3JxrfkU5CLJe5svyUukB0D52DntWHzOYc8Jdiis%2BPbn1CSVfYQzKcuMKqr%2BtUGOp0B2SoIhJc%2Ffj0T5ltTlCxvt6s9mB2tIzsRdws4UY%2BxmAtRpKX9Ea9OlcLQxg1p%2F4j%2BCXbmi5%2BJImX72%2BXiTrBXo3U9Eq84Yxvv8UFZQ28Nk7%2FTEMwoY6aZcicJDwdkgDecvHGUIZNWR0EJi0pTzBJaeHJc0HnsY8DdRLwb7pOJR82eHzBUJ%2BKK2gZfX168gFcfNOE344aajYU0VK5e%2FA%3D%3D&Expires=1790877959",
+      "bytes": 1725279,
+      "sha256": "a31699c6a89806b74b0151e5e6a7df65de4b49050482fe5ebf8a4379d7af8f29",
+      "status": "downloaded",
+      "expected_sha256": "a31699c6a89806b74b0151e5e6a7df65de4b49050482fe5ebf8a4379d7af8f29",
+      "verified": true
+    },
+    {
+      "file": "pyav-input-nasm-nasm-2.16.03.tar.xz",
+      "url": "https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.xz",
+      "resolved_url": "https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.xz",
+      "bytes": 1032388,
+      "sha256": "1412a1c760bbd05db026b6c0d1657affd6631cd0a63cddb6f73cc6d4aa616148",
+      "status": "downloaded",
+      "expected_sha256": "1412a1c760bbd05db026b6c0d1657affd6631cd0a63cddb6f73cc6d4aa616148",
+      "verified": true
+    },
+    {
+      "file": "numpy-2.3.2.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/37/7d/3fec4199c5ffb892bed55cff901e4f39a58c81df9c44c280499e92cad264/numpy-2.3.2.tar.gz",
+      "resolved_url": "https://files.pythonhosted.org/packages/37/7d/3fec4199c5ffb892bed55cff901e4f39a58c81df9c44c280499e92cad264/numpy-2.3.2.tar.gz",
+      "bytes": 20489306,
+      "sha256": "e0486a11ec30cdecb53f184d496d1c6a20786c81e55e41640270130056f8ee48",
+      "status": "downloaded",
+      "expected_sha256": "e0486a11ec30cdecb53f184d496d1c6a20786c81e55e41640270130056f8ee48",
+      "verified": true
+    },
+    {
+      "file": "pillow-12.2.0.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/8c/21/c2bcdd5906101a30244eaffc1b6e6ce71a31bd0742a01eb89e660ebfac2d/pillow-12.2.0.tar.gz",
+      "resolved_url": "https://files.pythonhosted.org/packages/8c/21/c2bcdd5906101a30244eaffc1b6e6ce71a31bd0742a01eb89e660ebfac2d/pillow-12.2.0.tar.gz",
+      "bytes": 46987819,
+      "sha256": "a830b1a40919539d07806aa58e1b114df53ddd43213d9c8b75847eee6c0182b5",
+      "status": "downloaded",
+      "expected_sha256": "a830b1a40919539d07806aa58e1b114df53ddd43213d9c8b75847eee6c0182b5",
+      "verified": true
+    }
+  ],
+  "runtime_verification": {
+    "component": "NVIDIA RTX Video SDK 1.1.0 x64 release",
+    "sha256": "c3d88eea5ff7a548edefa66414cf6e77464d0947277c904f324dd23abf58a1ed",
+    "matches_official_sdk": true,
+    "signature": "Valid"
+  },
+  "pending": [
+    "FFmpeg full build external dependency exact sources and build scripts",
+    "PyAV bundled x264/x265 combined licensing assessment",
+    "NVIDIA applicable distribution and trademark conditions; no community exemption"
+  ]
+}

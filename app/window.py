@@ -12,12 +12,13 @@ from dataclasses import asdict
 from pathlib import Path
 
 from PIL import Image
-from PySide6.QtCore import Qt, QRectF, Signal, QObject, QTimer
-from PySide6.QtGui import QColor, QPainter, QPen, QImage, QFont
+from PySide6.QtCore import Qt, QRectF, Signal, QObject, QTimer, QUrl
+from PySide6.QtGui import QColor, QPainter, QPen, QImage, QFont, QDesktopServices
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QLabel,
     QPushButton, QSlider, QDoubleSpinBox, QComboBox, QFileDialog, QMessageBox,
     QFrame, QScrollArea, QCheckBox, QProgressBar, QButtonGroup, QSizePolicy,
+    QDialog, QTextBrowser,
 )
 
 from .engine import (
@@ -671,6 +672,23 @@ class MainWindow(QMainWindow):
                 self.status.setText('● 已选择 NR 运行库 · ' + str(Path(path).parent / 'nvngx_dlssnr.dll'))
             except Exception as exc:
                 QMessageBox.warning(self, "运行库无效", str(exc))
+
+    def show_licenses(self):
+        dialog = QDialog(self)
+        dialog.setWindowTitle('dlss5flasher · 第三方许可')
+        dialog.resize(820, 620)
+        layout = QVBoxLayout(dialog)
+        browser = QTextBrowser(dialog)
+        browser.setOpenLinks(False)
+        browser.anchorClicked.connect(lambda url: QDesktopServices.openUrl(
+            QUrl.fromLocalFile(str(ROOT) + '/').resolved(url)))
+        browser.document().setBaseUrl(QUrl.fromLocalFile(str(ROOT) + '/'))
+        notice = ROOT / 'THIRD_PARTY_NOTICES.md'
+        browser.setMarkdown(notice.read_text(encoding='utf-8-sig') if notice.exists()
+                            else '缺少 THIRD_PARTY_NOTICES.md，请保持软件目录完整。')
+        layout.addWidget(browser)
+        layout.addWidget(button('关闭', dialog.accept))
+        dialog.exec()
 
     def show_log(self):
         path = WORK / "last-error.log"

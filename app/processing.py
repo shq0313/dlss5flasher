@@ -145,7 +145,7 @@ class WorkstationRuntime:
         nr_input[:, :, :3] = rgba[:, :, :3].astype(np.float32) / 255
         if params.white_enabled:
             # Explicit opt-in to the old reference-white experiment, NOT a
-            # verified RenoDX Diffuse White implementation. Default stays sRGB.
+            # fully validated reference-white implementation. Default stays sRGB.
             nr_input[:, :, :3] = linear * (params.white / 80)
         enhanced = self.nr.call(nr_input, params, token, reset=reset)
         result = (enhanced[:, :, :3].astype(np.float32) * (80 / params.white)

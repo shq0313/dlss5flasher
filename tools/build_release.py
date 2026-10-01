@@ -53,6 +53,35 @@ def audit_and_zip(tree, destination):
     return {'name': destination.name, 'bytes': destination.stat().st_size,
             'sha256': digest(destination), 'files': len(manifest) + 1}
 
+
+def package_source_materials(target):
+    index_path = ROOT / 'licenses/source-materials.json'
+    if not index_path.is_file():
+        raise RuntimeError('Missing licenses/source-materials.json; collect source materials first.')
+    index = json.loads(index_path.read_text(encoding='utf-8'))
+    base = ROOT / 'third_party/release-sources'
+    destination = target / 'dlss5flasher-third-party-source-materials.zip'
+    seen = set()
+    # These are already compressed source archives; keep their original bytes.
+    with zipfile.ZipFile(destination, 'w', zipfile.ZIP_STORED) as archive:
+        for record in index['files']:
+            name = record['file']
+            if Path(name).name != name or name in seen or not name.endswith(('.gz', '.xz', '.bz2', '.html')):
+                raise RuntimeError(f'Invalid source-material entry: {name}')
+            path = base / name
+            if not path.is_file() or digest(path) != record['sha256']:
+                raise RuntimeError(f'Source-material checksum mismatch: {name}')
+            seen.add(name)
+            archive.write(path, 'third-party-sources/' + name)
+        archive.write(index_path, 'third-party-sources/source-materials.json')
+        archive.write(ROOT / 'docs/依赖源码说明.md', 'third-party-sources/README.md')
+    with zipfile.ZipFile(destination) as archive:
+        if archive.testzip():
+            raise RuntimeError('Source-material ZIP CRC failed')
+    return {'name': destination.name, 'bytes': destination.stat().st_size,
+            'sha256': digest(destination), 'files': len(seen) + 2,
+            'complete_corresponding_source': index['complete_corresponding_source']}
+
 def main():
     target = ROOT / 'release' / datetime.now().strftime('%Y%m%d-%H%M%S')
     target.mkdir(parents=True, exist_ok=False)
@@ -73,6 +102,7 @@ def main():
     report = {'status': 'local-candidate-not-published', 'binary_redistribution_review': 'pending-see-docs', 'artifacts': []}
     for tree, name in ((source, 'dlss5flasher-source.zip'), (portable, 'dlss5flasher-windows-x64-candidate.zip')):
         report['artifacts'].append(audit_and_zip(tree, target / name))
+    report['artifacts'].append(package_source_materials(target))
     (target / 'release-report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
     (target / 'SHA256SUMS.txt').write_text(''.join(f"{a['sha256']}  {a['name']}\n" for a in report['artifacts']), encoding='utf-8')
     print(target)

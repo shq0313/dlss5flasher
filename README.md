@@ -35,8 +35,8 @@ nvngx_dlssnr.dll需要选择好自己的显卡版本，目前30 40 50系已经�
 | 风格、整体增强 | NR 原生风格与强度；高强度不等于更还原。 |
 | 结构细节、局部光影 | NR 原生纹理／结构和局部明暗参数。 |
 | 人物结构、自动识别人像区域 | NR SkinStructureStrength 与 UseAutoMask；数值不是“保护程度”，识别效果依赖素材和运行库。 |
-| Diffuse White / nits | 旁设“启用 Diffuse White”开关并标注“实验性功能”，默认关闭。关闭使用修复后的 SDR 颜色路径，参考白数值不参与处理；开启试用旧版线性参考白换算，可能改变对比度／发灰，尚非经过验证的 RenoDX 等价实现。恢复默认值会关闭开关。 |
-| 全局光影·混合 | 本应用调节 NR 带来的大范围亮度变化。当前 DLL 不响应 GlobalToneStrength，因此不冒称 RenoDX 原生参数。 |
+| Diffuse White / nits | 旁设“启用 Diffuse White”开关并标注“实验性功能”，默认关闭。关闭使用修复后的 SDR 颜色路径，参考白数值不参与处理；开启试用线性参考白换算，可能改变对比度／发灰，完整颜色适配尚待验证。恢复默认值会关闭开关。 |
+| 全局光影·混合 | 本应用调节 NR 带来的大范围亮度变化。当前 DLL 不响应 GlobalToneStrength，因此使用应用自身的亮度混合处理。 |
 | 增强色彩 | 0 按增强亮度等比例缩放原片 RGB，1 使用 NR 色彩；超出 SDR 显示范围的高光仍可能裁切。 |
 | 与原图混合 | 0 为超分原图，1 为完整 NR 结果。 |
 | NR 处理次数 | 1～4 个独立 Feature 连续计算，每层有独立历史，增加时间和显存。 |
@@ -78,10 +78,10 @@ docs/                          使用与发布说明
 cmd /c native\host_v2\build.bat
 ```
 
-日常运行不需要编译器或 SDK。VSR 使用用户参考包二进制；其源码的重新构建另需 RTX Video SDK。
+日常运行不需要编译器或 SDK。随包 VSR 运行库已与 RTX Video SDK 1.1.0 的 x64 正式版核对一致；原生 VSR 宿主的重新构建需要另行准备该 SDK。
 
 源码环境可用 Python 3.13 安装 `requirements-lock.txt`，另行准备 FFmpeg、原生宿主及运行库。自动化单元测试不代表所有显卡均可运行。
 
 ## 许可与致谢
 
-项目自有代码采用 [MIT](LICENSE)。改编自 DLSS5Tool 的代码保留其版权声明；Qt、FFmpeg、NVIDIA 运行库等第三方组件各自适用原许可，不能整体视为 MIT。详见 [第三方组件](THIRD_PARTY_NOTICES.md) 和 [依赖源码说明](docs/依赖源码说明.md)。本项目与 NVIDIA 无隶属或官方背书关系。
+项目自有代码采用 [MIT License](LICENSE)。便携包中的 Qt／PySide6、FFmpeg、Python 和 NVIDIA VSR 等第三方组件仍受各自上游许可约束，不属于本项目的 MIT 授权范围。详情见 [第三方声明](THIRD_PARTY_NOTICES.md)、随包 `licenses/` 和 [依赖源码说明](docs/依赖源码说明.md)，也可点击软件右上角“许可”查看。发布包不包含 `nvngx_dlssnr.dll`，需用户自行准备。本项目与 NVIDIA 无隶属或官方背书关系。
