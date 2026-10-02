@@ -13,6 +13,7 @@ import numpy as np
 from PIL import Image
 from .engine import ROOT, WORK, Token, ffmpeg_tool, run_checked
 from .native_worker import worker
+from .video_encoder import create_video_stream
 
 
 def to_linear(rgb):
@@ -206,7 +207,7 @@ class WorkstationRuntime:
         self.preview_key = key
         return result, time.perf_counter() - start
 
-    def export(self, info, params, output_path, token, progress):
+    def export(self, info, params, output_path, token, progress, encoder='libx264'):
         self.validate()
         token.check()
         out = Path(output_path).resolve()
@@ -220,12 +221,7 @@ class WorkstationRuntime:
             temp = Path(directory)
             video, combined = temp / 'video.mp4', temp / 'complete.mp4'
             with av.open(info.path) as source, av.open(str(video), 'w') as dest:
-                stream = dest.add_stream('libx264', rate=info.fps)
-                stream.width, stream.height, stream.pix_fmt = w, h, 'yuv420p'
-                stream.options = {'crf': '18', 'preset': 'fast'}
-                stream.codec_context.color_primaries = 1
-                stream.codec_context.color_trc = 1
-                stream.codec_context.colorspace = 1
+                stream = create_video_stream(dest, w, h, info.fps, encoder)
                 count, first = 0, None
                 for frame in source.decode(video=0):
                     token.check()

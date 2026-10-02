@@ -27,3 +27,15 @@ NVIDIA RTX、NVIDIA GeForce RTX 及其他相关名称属于 NVIDIA。SDK 组件�
 ## 对应源码及构建资料
 
 已收集的版本、来源、校验方式和未决事项见 [依赖源码说明](docs/依赖源码说明.md)。发布目录另有第三方源码资料包，包含 Qt、PySide6、CPython、PyAV、FFmpeg 主源码、相关构建配方和已核对的依赖源码。该资料包不包含 NVIDIA SDK 二进制或 NR DLL，不将尚未取得的完整构建材料标成已具备。
+
+FFmpeg 命令行工具作为独立可执行文件调用，保留原 GPLv3 文本和构建记录；PyAV 内置 FFmpeg 库单独列明。使用 NVENC 编码不改变整份 FFmpeg 构建及其他组件的许可。软件支持指定外部工具路径，但此功能不替代随包二进制的分发要求。
+
+## 参考实现与技术研究
+
+以下是开发中查阅过的公开项目，列出研究用途，不表示已集成其全部功能，也不表示这些项目为本软件背书：
+
+- [RenoDX](https://github.com/clshortfuse/renodx)：参考 DirectX 画面调节、参考白与色彩处理的公开设计，用于理解视频演示中的参数。
+- [DXL](https://github.com/LCPD15/DXL)：研究 DLSS 工具的集成方式和交互体验；未引入其 AGPL 实现。
+- [OptiScaler](https://github.com/optiscaler/OptiScaler)：超分集成与色彩输入约定的交叉研究；未复制其 shader 实现。
+
+实际使用或改编的第三方代码仍以本文件组件表、源码声明及随包原许可证为准，参考列表不替代版权归属。

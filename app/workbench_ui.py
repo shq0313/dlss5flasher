@@ -176,6 +176,12 @@ def build(w):
     w.pass_combo.setToolTip('真正连续运行 1～4 次 NR；每层拥有独立的时序历史。次数越多，显存和耗时越高。')
     w.motion_combo = combo(output, '运动估计', ['NVIDIA 光流', '关闭光流'])
     w.motion_combo.setToolTip('使用相邻帧估计运动。单帧预览会先读入最多 2 帧历史；全片导出连续处理。')
+    from .video_encoder import ENCODERS
+    w.encoder_combo = combo(output, '视频编码', [title for _, title in ENCODERS])
+    for index, (codec, _) in enumerate(ENCODERS):
+        w.encoder_combo.setItemData(index, codec)
+    w.encoder_combo.setToolTip('选择整段视频的压缩编码方式。GPU 使用 NVENC；CPU 使用 x264。两者都用显卡做 DLSS 增强。切换后需重新渲染视频，不影响当前帧预览。')
+    w.encoder_combo.currentIndexChanged.connect(w.encoder_changed)
     slider(output, 'detail', '与原图混合', 1, 0, 1, '0 为超分后的原图，1 为完整 NR 结果。')
     w.output_size = label('导入视频后显示输出尺寸', 'muted')
     output.addWidget(w.output_size)

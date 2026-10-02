@@ -11,8 +11,8 @@
   },
   {
     "path": "app/engine.py",
-    "bytes": 18049,
-    "sha256": "0822a73b7ee4db88f79b3545632d375e87c7734f5e24676407c5687518b5f59a"
+    "bytes": 18390,
+    "sha256": "3b3c333a3f0047627d50d5c0e691a1860257907b7e406e58491e0fd016ea88df"
   },
   {
     "path": "app/native_worker.py",
@@ -21,8 +21,8 @@
   },
   {
     "path": "app/processing.py",
-    "bytes": 12914,
-    "sha256": "3c2019db3d29b9a6e679a580390bdf1a42530cd4b8a82bccb8b863d7b1a4851d"
+    "bytes": 12686,
+    "sha256": "0d73906cb504504ccebe826b2296f81738919ba2f2511773951485283f9e5959"
   },
   {
     "path": "app/render_progress.py",
@@ -35,29 +35,34 @@
     "sha256": "bde4d765689ac0c4b90e4d1c7517bb0857318e1660415f525ebab176f70ab766"
   },
   {
+    "path": "app/video_encoder.py",
+    "bytes": 1638,
+    "sha256": "3e37311def927528e029818f37c7c799ccef8db5c8ff39c8de945578c736a40d"
+  },
+  {
     "path": "app/video_output.py",
     "bytes": 1310,
     "sha256": "74b20aa8a61c2ee0759facd067192907d33ab24dab391b1900fd52c2729dd2fb"
   },
   {
     "path": "app/window.py",
-    "bytes": 31144,
-    "sha256": "3d0e90921227e72a9695a86f7f77677fc5689e90890a46bd996043a98d934e11"
+    "bytes": 31623,
+    "sha256": "6fa02b6d7601de1b2ad3e1b465521d5cf1639d0df75896ff9ab2025cf1ea8427"
   },
   {
     "path": "app/workbench_ui.py",
-    "bytes": 12098,
-    "sha256": "26c1cba8ea4abd6fca7f2824de6cc8421fb1f30a21697e3b1388c23a524afb4b"
+    "bytes": 12601,
+    "sha256": "e3b6440fc5a2ce6aadf7dfd1eeee20dc13ce47c89107ce61e92610f0fccc7b72"
   },
   {
     "path": "CHANGELOG.md",
-    "bytes": 1120,
-    "sha256": "622ae3989b7ff1e4624284dd77a894f632d9fe6c0f1a1823e532cca56c603910"
+    "bytes": 1406,
+    "sha256": "95075a11f3d622d3d8345c231a8d668143de6c906eb541dd2f695718f1446e7e"
   },
   {
     "path": "docs/依赖源码说明.md",
-    "bytes": 2720,
-    "sha256": "b9dd6381d474f05a90a2ca201cd04e6c3f9c6ca431a8d1c9456b1d759bd1dd1f"
+    "bytes": 3485,
+    "sha256": "b2d7b58d7b93eade860aa19705bb1fe62a7f04f93963bbafeebb28329d99a9b1"
   },
   {
     "path": "launch.py",
@@ -246,8 +251,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 7679,
-    "sha256": "b51f75aff43c9f0b3054ba07933de1e5180ce7f0cb4a84afe6038f8756e5c8a5"
+    "bytes": 8490,
+    "sha256": "7ae06880f240b2f8d281f9031de8e81979d6ee479f6ddaed640ad4927f07a5a6"
   },
   {
     "path": "requirements-lock.txt",
@@ -275,14 +280,19 @@
     "sha256": "ab5fe34576e531cf03f52bfea750e374c57fe377c5827243b38f8536e3c8eedf"
   },
   {
+    "path": "tests/test_video_encoder.py",
+    "bytes": 5681,
+    "sha256": "e5a0a216251b10834637e1b37c40db9221ca06bfc8c3fb5d191d1c4b8dc5a381"
+  },
+  {
     "path": "tests/test_video_output.py",
     "bytes": 1450,
     "sha256": "b71ad6464efd1f96766826a122db4644027da67471ed66f65766eb302d8fbaa3"
   },
   {
     "path": "THIRD_PARTY_NOTICES.md",
-    "bytes": 3025,
-    "sha256": "ffbbcacceb4e2f4311336debd44e957fee39dbcef0d3a9c7c5c3e82e774e7248"
+    "bytes": 4081,
+    "sha256": "0b0dfdb606c88153e527169b36f4a744ffef74fc7e796b1dfda9689677c1cdf6"
   },
   {
     "path": "tools/build_release.py",

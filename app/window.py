@@ -462,6 +462,7 @@ class MainWindow(QMainWindow):
         self.mask_check.setChecked(True)
         self.white_check.setChecked(False)
         self.scale_combo.setCurrentIndex(1)
+        self.encoder_combo.setCurrentIndex(0)
         self.parameters_changed()
         self.profile_label.setText("默认参数 · 所有已启用控件直接生效")
 
@@ -580,7 +581,13 @@ class MainWindow(QMainWindow):
             stat = Path(self.info.path).stat()
         except OSError:
             return None
-        return (self.info.path, stat.st_size, stat.st_mtime_ns, self.parameters(), self.runtime_path)
+        return (self.info.path, stat.st_size, stat.st_mtime_ns, self.parameters(), self.runtime_path,
+                self.encoder_combo.currentData())
+
+    def encoder_changed(self):
+        # Encoding is independent of still-frame inference and its preview cache.
+        self.status.setText('视频编码已切换 · 重新渲染视频后生效 · 当前帧预览不受影响')
+        self.update_buttons()
 
     def video_ready(self):
         return (self.rendered_video is not None and self.rendered_video[0] == self.video_key()
@@ -593,13 +600,14 @@ class MainWindow(QMainWindow):
         self.render_timer.stop()
         self.seek_timer.stop()
         params, info, key = self.parameters(), self.info, self.video_key()
+        encoder = self.encoder_combo.currentData()
         runtime = self.runtime
         path = Path(self.video_cache.name) / f'{uuid.uuid4().hex}.mp4'
         self.exporting = True
         self.progress.setVisible(True)
         self.progress.setRange(0, info.frames)
         self.progress.setValue(0)
-        self.status.setText("正在渲染整段视频 · 当前参数已锁定 · 可取消")
+        self.status.setText(f'正在渲染整段视频 · {self.encoder_combo.currentText()} · 可取消')
         self.update_buttons()
 
         def render(token, gen):
@@ -607,7 +615,7 @@ class MainWindow(QMainWindow):
             def report(current, total):
                 remaining = estimate.update(current, total, time.perf_counter())
                 self.events.progress.emit(gen, current, total, remaining)
-            runtime.export(info, params, path, token, report)
+            runtime.export(info, params, path, token, report, encoder=encoder)
             token.check()
             return key, str(path)
         self.request("render_video", render)
@@ -638,7 +646,7 @@ class MainWindow(QMainWindow):
     def on_progress(self, generation, current, total, remaining=None):
         if generation == self.generation:
             self.progress.setValue(current)
-            self.status.setText(progress_text(current, total, remaining))
+            self.status.setText(progress_text(current, total, remaining) + ' · ' + self.encoder_combo.currentText())
 
     def cancel_job(self):
         self.token.cancel()

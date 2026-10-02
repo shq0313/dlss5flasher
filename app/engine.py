@@ -16,6 +16,7 @@ from pathlib import Path
 import av
 import numpy as np
 from PIL import Image
+from .video_encoder import create_video_stream
 
 ROOT = Path(__file__).resolve().parent.parent
 WORK = ROOT / ".work"
@@ -84,9 +85,22 @@ class VideoInfo:
 
 
 def ffmpeg_tool(name):
-    bundled = ROOT / f"ffmpeg-8.0.1-full_build/bin/{name}.exe"
-    if bundled.is_file():
-        return str(bundled)
+    if name not in ('ffmpeg', 'ffprobe'):
+        raise ValueError('Unsupported media tool')
+    configured = os.environ.get(name.upper() + '_EXE')
+    if configured:
+        path = Path(configured).expanduser()
+        if not path.is_file():
+            raise RuntimeError(f'{name.upper()}_EXE 指向的文件不存在：{path}')
+        return str(path.resolve())
+    candidates = []
+    if name == 'ffprobe' and os.environ.get('FFMPEG_EXE'):
+        candidates.append(Path(os.environ['FFMPEG_EXE']).with_name('ffprobe.exe'))
+    candidates.extend((ROOT / f'ffmpeg-8.0.1-full_build/bin/{name}.exe',
+                       ROOT / f'{name}.exe'))
+    for bundled in candidates:
+        if bundled.is_file():
+            return str(bundled.resolve())
     found = shutil.which(name)
     if found:
         return found
@@ -228,7 +242,7 @@ class LegacyRuntime:
             token.check()
             return output, time.perf_counter() - started
 
-    def export(self, info, params, output_path, token, progress):
+    def export(self, info, params, output_path, token, progress, encoder='libx264'):
         """Persistent temporal runtime + bounded backpressure; original audio remux."""
         token.check()
         self.validate()
@@ -298,13 +312,7 @@ class LegacyRuntime:
                     sender.start()
                     guard.start()
                     with av.open(str(video), "w") as dest:
-                        stream = dest.add_stream("libx264", rate=info.fps)
-                        stream.width, stream.height = width, height
-                        stream.pix_fmt = "yuv420p"
-                        stream.options = {"crf": "18", "preset": "fast"}
-                        stream.codec_context.color_primaries = 1
-                        stream.codec_context.color_trc = 1
-                        stream.codec_context.colorspace = 1
+                        stream = create_video_stream(dest, width, height, info.fps, encoder)
                         for index in range(info.frames):
                             token.check()
                             remaining = width * height * 4
