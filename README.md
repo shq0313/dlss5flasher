@@ -2,11 +2,11 @@
 点点星星吧
 面向 Windows / NVIDIA 的本地视频增强工作台：定位当前帧、调节神经增强、划线比较原图与结果，保存图片或渲染并导出整段视频。目前为早期预览阶段。
 
-Local video enhancement workbench for Windows and NVIDIA GPUs, with adjustable frame previews, before/after comparison, image saving and video export. The NR runtime must be supplied by the user. This is an early preview, not a real-time enhanced video player.
+Local video enhancement workbench for Windows and NVIDIA GPUs, with adjustable frame previews, before/after comparison, image saving and video export. Download and add the NR runtime separately for your GPU series. This is an early preview, not a real-time enhanced video player.
 开发契机是本人在刷视频的时候，刷到了一个讲主机游戏利用采集卡在pc用上dlss5，于是乎决定按照这个逻辑开发一个播放器，加上我自己在玩游戏的时候用过相关的插件
 **当前定位：Windows x64 / NVIDIA 显卡专属。** NVIDIA 驱动由用户自行准备，软件不负责安装或更新驱动； AMD 显卡适配目前在尝试适配中。显卡与 NR 运行库的兼容性以实际验证记录为准。
 
-**NR 运行库需自行下载：**Releases 发布包不附带 `nvngx_dlssnr.dll`。（我研究研究怎么弄一个下载页）适配自己显卡的 DLL 放到 `runtime/DLSS-NR/1.3/bin/`，或启动后点击右上角“运行库”选择它。缺少它时可以打开界面，但无法渲染。不保证任意来源的同名 DLL 可用。
+**NR 运行库单独下载：**主程序 ZIP 不内置 `nvngx_dlssnr.dll`。在 [Releases](https://github.com/shq0313/dlss5flasher/releases) 按显卡代际选择独立附件 `30.zip`、`40.zip` 或 `50.zip`，解压后将里面的 `nvngx_dlssnr.dll` 放到 `runtime/DLSS-NR/1.3/bin/`，或启动后点击右上角“运行库”选择它。部分压缩包内带一层文件夹，只需取出 DLL。缺少它时可以打开界面，但无法渲染。不保证任意来源的同名 DLL 可用。
 nvngx_dlssnr.dll需要选择好自己的显卡版本，目前30 40 50系已经测试成功
 ## 启动
 
@@ -70,7 +70,7 @@ output/                        默认视频导出目录
 docs/                          使用与发布说明
 ```
 
-路径按项目根目录解析。顶部“运行库”直接选择 `nvngx_dlssnr.dll`；VSR 和本项目宿主使用项目内副本。便携包不包含旧版 CLI、DLSS SR DLL 或其他显卡的 NR 压缩包。
+路径按项目根目录解析。顶部“运行库”直接选择 `nvngx_dlssnr.dll`；VSR 和本项目宿主使用项目内副本。主程序便携包不包含旧版 CLI、DLSS SR DLL 或显卡代际 NR 压缩包；NR 作为 Release 独立附件提供。
 
 ## 验证与原生构建
 
@@ -88,4 +88,4 @@ FFmpeg CLI 支持用 `FFMPEG_EXE` / `FFPROBE_EXE` 环境变量指定可执行文
 
 ## 许可与致谢
 
-项目自有代码采用 [MIT License](LICENSE)。便携包中的 Qt／PySide6、FFmpeg、Python 和 NVIDIA VSR 等第三方组件仍受各自上游许可约束，不属于本项目的 MIT 授权范围。详情见 [第三方声明](THIRD_PARTY_NOTICES.md)、随包 `licenses/` 和 [依赖源码说明](docs/依赖源码说明.md)，也可点击软件右上角“许可”查看。发布包不包含 `nvngx_dlssnr.dll`，需用户自行准备。本项目与 NVIDIA 无隶属或官方背书关系。
+项目自有代码采用 [MIT License](LICENSE)。便携包中的 Qt／PySide6、FFmpeg、Python、NVIDIA VSR 以及独立 NR 附件等第三方组件仍受各自上游许可约束，不属于本项目的 MIT 授权范围。详情见 [第三方声明](THIRD_PARTY_NOTICES.md)、随包 `licenses/` 和 [依赖源码说明](docs/依赖源码说明.md)，也可点击软件右上角“许可”查看。主程序 ZIP 不内置 `nvngx_dlssnr.dll`，需单独下载并添加。本项目与 NVIDIA 无隶属或官方背书关系。

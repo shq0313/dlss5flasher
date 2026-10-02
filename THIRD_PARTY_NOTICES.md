@@ -22,7 +22,7 @@
 
 NVIDIA RTX、NVIDIA GeForce RTX 及其他相关名称属于 NVIDIA。SDK 组件的使用和分发受上述 NVIDIA 原许可及补充条款约束；本项目与 NVIDIA 无隶属关系，也不表示官方背书。原生宿主使用 NVIDIA DLSS / NGX SDK，视频超分使用 NVIDIA RTX Video SDK。
 
-发布包不包含 `nvngx_dlssnr.dll`、旧版 CLI、DLSS SR DLL 或显卡代际 NR 压缩包。NR 运行库需用户从有权提供的来源自行取得；本项目不授予该文件的使用或再分发权。“社区项目”不是上游许可的豁免条件。
+源码仓库和主程序 ZIP 不包含 `nvngx_dlssnr.dll`、旧版 CLI、DLSS SR DLL 或显卡代际 NR 压缩包。维护者提供的 `30.zip`、`40.zip`、`50.zip` 作为 Release 独立附件，用户按显卡代际下载并添加；这些附件不属于本项目的 MIT 授权范围，NVIDIA 原有权利及适用条款不因本项目发布而改变。附件名称和维护者的兼容性测试不代表 NVIDIA 官方认证或分发授权核验。“社区项目”不是上游许可的豁免条件。
 
 ## 对应源码及构建资料
 

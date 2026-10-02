@@ -56,8 +56,8 @@
   },
   {
     "path": "CHANGELOG.md",
-    "bytes": 1406,
-    "sha256": "95075a11f3d622d3d8345c231a8d668143de6c906eb541dd2f695718f1446e7e"
+    "bytes": 1424,
+    "sha256": "65b813e93669d495bf091c88d914945479476f8b2e7351df6c1dc2024617c810"
   },
   {
     "path": "docs/依赖源码说明.md",
@@ -251,8 +251,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 8490,
-    "sha256": "7ae06880f240b2f8d281f9031de8e81979d6ee479f6ddaed640ad4927f07a5a6"
+    "bytes": 8737,
+    "sha256": "de8221cceb75869e220c9c3a33a8a0bc86861586b558d64ef690eaae1f449e5b"
   },
   {
     "path": "requirements-lock.txt",
@@ -291,8 +291,8 @@
   },
   {
     "path": "THIRD_PARTY_NOTICES.md",
-    "bytes": 4081,
-    "sha256": "0b0dfdb606c88153e527169b36f4a744ffef74fc7e796b1dfda9689677c1cdf6"
+    "bytes": 4321,
+    "sha256": "dec55a354e68b664917ef0ed9b2d523d09c0ba51c0af6408a12d0a6b1c86b5c1"
   },
   {
     "path": "tools/build_release.py",
